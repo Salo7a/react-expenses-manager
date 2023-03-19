@@ -8,13 +8,13 @@ function App() {
         {
             id: '1',
             title: 'License',
-            price: '1,924',
+            price: 1924,
             date: new Date(2023, 2, 18)
         },
         {
             id: '2',
             title: 'Shopping',
-            price: '119.95',
+            price: 119.95,
             date: new Date(2023, 2, 17)
         }
     ]);

@@ -4,7 +4,7 @@ import {useState} from "react";
 const ExpenseForm = ({onAddExpense, onCancelExpense}) => {
 
     const [newTitle, setNewTitle] = useState('');
-    const [newPrice, setNewPrice] = useState('');
+    const [newPrice, setNewPrice] = useState(0);
     const [newDate, setNewDate] = useState('');
 
     const handleTitleChange = e => {
@@ -26,7 +26,7 @@ const ExpenseForm = ({onAddExpense, onCancelExpense}) => {
         };
         onAddExpense(newExpense);
         setNewTitle('');
-        setNewPrice('');
+        setNewPrice(0);
         setNewDate('');
     }
     const handleCancel = e => {
