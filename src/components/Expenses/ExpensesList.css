@@ -1,0 +1,10 @@
+.expenses-list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    width: 65vw;
+
+}
