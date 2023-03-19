@@ -1,10 +1,9 @@
 import './App.css';
-import ExpensesList from "./components/Expenses/ExpensesList";
-import NewExpense from "./components/NewExpense/NewExpense";
 import {useState} from "react";
+import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 function App() {
-
     const [expenses, setExpenses] = useState([
         {
             id: '1',
@@ -26,7 +25,7 @@ function App() {
         <div className="App">
             <div className="App-header">
                 <NewExpense onAddExpense={addExpense}/>
-                <ExpensesList expenses={expenses}/>
+                <Expenses expenses={expenses}/>
             </div>
         </div>
     );

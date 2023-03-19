@@ -1,7 +1,7 @@
 import './ExpenseForm.css';
 import {useState} from "react";
 
-const ExpenseForm = ({onAddNewExpense}) => {
+const ExpenseForm = ({onAddExpense, onCancelExpense}) => {
 
     const [newTitle, setNewTitle] = useState('');
     const [newPrice, setNewPrice] = useState('');
@@ -24,10 +24,13 @@ const ExpenseForm = ({onAddNewExpense}) => {
             price: newPrice,
             date: new Date(newDate)
         };
-        onAddNewExpense(newExpense);
+        onAddExpense(newExpense);
         setNewTitle('');
         setNewPrice('');
         setNewDate('');
+    }
+    const handleCancel = e => {
+        onCancelExpense()
     }
     return (
         <form onSubmit={handleSubmit}>
@@ -46,6 +49,7 @@ const ExpenseForm = ({onAddNewExpense}) => {
                 </div>
             </div>
             <div className='new-expense__actions'>
+                <button onClick={handleCancel}>Cancel Expense</button>
                 <button type='submit'>Add Expense</button>
             </div>
         </form>

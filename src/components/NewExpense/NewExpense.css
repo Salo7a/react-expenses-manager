@@ -3,10 +3,9 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 1rem 0.2rem;
+    padding: 1rem 1rem;
     margin: 2rem auto;
-    min-width: 25vw;
-    max-width: 95%;
+    width: fit-content;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
@@ -21,7 +20,6 @@
     background-color: #015013;
     color: white;
     border-radius: 12px;
-    margin-right: 1rem;
 }
 
 .new-expense button:hover,
